@@ -5,13 +5,13 @@
 class DatabaseGateway < Formula
   desc "Safe access to production databases"
   homepage "https://github.com/kazhuravlev/database-gateway"
-  version "0.13.13"
+  version "0.13.14"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kazhuravlev/database-gateway/releases/download/v0.13.13/database-gateway_darwin_arm64.tar.gz"
-      sha256 "ab0c01886bd93e835a105ccb97123867bbc24a61ad5f3ff21d12e672f4b0d138"
+      url "https://github.com/kazhuravlev/database-gateway/releases/download/v0.13.14/database-gateway_darwin_arm64.tar.gz"
+      sha256 "bda17e0305bf4f93c92b8f9934f5fb89854552d03a18dc57badcacec99ed5295"
 
       def install
         bin.install "database-gateway"
@@ -22,8 +22,8 @@ class DatabaseGateway < Formula
   on_linux do
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazhuravlev/database-gateway/releases/download/v0.13.13/database-gateway_linux_arm64.tar.gz"
-        sha256 "2d993e3792b8a7e4ce21553f1c88e1d5c80a0100f4d7820667d1dcf8019ad205"
+        url "https://github.com/kazhuravlev/database-gateway/releases/download/v0.13.14/database-gateway_linux_arm64.tar.gz"
+        sha256 "37027e777dce45575d514f695a9a2b038a186a5d6548bc5e095d99359fd9b6e0"
 
         def install
           bin.install "database-gateway"
